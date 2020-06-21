@@ -4,8 +4,8 @@ const express = require("express");
 
 const shopController = require("../controllers/shop");
 
-const rootDir = require("../util/path");
-const adminData = require("./admin");
+// const rootDir = require("../util/path");
+// const adminData = require("./admin");
 
 const router = express.Router();
 
@@ -19,7 +19,7 @@ router.get("/cart", shopController.getCart);
 
 router.post("/cart", shopController.postCart);
 
-// router.get("/checkout", shopController.checkout);
+// // router.get("/checkout", shopController.checkout);
 
 router.get("/orders", shopController.getOrders);
 
